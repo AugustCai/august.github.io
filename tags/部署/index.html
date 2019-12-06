@@ -21,10 +21,10 @@
   var CONFIG = {
     hostname: new URL('https://cairongzhi.github.io').hostname,
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '7.6.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -39,17 +39,17 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
   <meta name="description" content="starmile个人博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="starmile个人博客">
+<meta property="og:title" content="Crz&#39;s Blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;cairongzhi.github.io&#x2F;tags&#x2F;%E9%83%A8%E7%BD%B2&#x2F;index.html">
-<meta property="og:site_name" content="starmile个人博客">
+<meta property="og:site_name" content="Crz&#39;s Blog">
 <meta property="og:description" content="starmile个人博客">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -68,7 +68,7 @@
   };
 </script>
 
-  <title>标签: 部署 | starmile个人博客</title>
+  <title>标签: 部署 | Crz's Blog</title>
   
 
 
@@ -99,6 +99,8 @@
   </style>
 </noscript>
 
+  <!--  -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -112,7 +114,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">starmile个人博客</span>
+        <span class="site-title">Crz's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -156,9 +158,34 @@
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -275,9 +302,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="starmile"
+    <img class="site-author-image" itemprop="image" alt="Crz"
       src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">starmile</p>
+  <p class="site-author-name" itemprop="name">Crz</p>
   <div class="site-description" itemprop="description">starmile个人博客</div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -312,9 +339,6 @@
       <span class="links-of-author-item">
         <a href="https://weibo.com/2210422793/profile?rightmod=1&wvr=6&mod=personinfo" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;2210422793&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
       </span>
-      <span class="links-of-author-item">
-        <a href="https://www.cnblogs.com/starmile" title="Cnblogs → https:&#x2F;&#x2F;www.cnblogs.com&#x2F;starmile" rel="noopener" target="_blank"><i class="fa fa-fw fa-book"></i>Cnblogs</a>
-      </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
@@ -343,7 +367,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">starmile</span>
+  <span class="author" itemprop="copyrightHolder">Crz</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
@@ -381,7 +405,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -390,6 +414,8 @@
 
 
 
+
+  <script src="/js/local-search.js"></script>
 
 
 
