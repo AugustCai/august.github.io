@@ -1164,7 +1164,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #395070;
+  background: #ffbf0f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1549,6 +1549,11 @@ pre .javascript .function {
 .use-motion .pagination,
 .use-motion .comments {
   opacity: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .use-motion .post-header {
   opacity: 0;
@@ -2556,7 +2561,11 @@ hr {
   display: inline-block;
 }
 .site-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 2em;
   line-height: 1.4em;
+}
+.site-description,
+.site-author-name {
+  font-family: 'Caveat', cursive;
 }
