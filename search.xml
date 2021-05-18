@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test</title>
-    <url>/2019/12/06/test/</url>
-    <content><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content>
+    <title>Hexo Common Command</title>
+    <url>/2021/05/19/Command/</url>
+    <content><![CDATA[<h2 id="Hexo-Common-Command"><a href="#Hexo-Common-Command" class="headerlink" title="Hexo Common Command"></a>Hexo Common Command</h2><h3 id="Common-Command"><a href="#Common-Command" class="headerlink" title="Common Command"></a>Common Command</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo new page &quot;pageName&quot; #新建页面</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo generate #生成静态页面至public目录</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo deploy #部署到GitHub</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo help  # 查看帮助</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo version  #查看Hexo的版本</span></pre></td></tr></table></figure>
+
+<h3 id="Command-Abbreviations"><a href="#Command-Abbreviations" class="headerlink" title="Command Abbreviations"></a>Command Abbreviations</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n &#x3D;&#x3D; hexo new</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo g &#x3D;&#x3D; hexo generate</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo s &#x3D;&#x3D; hexo server</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span></pre></td></tr></table></figure>
+
+<h3 id="Combined-Command"><a href="#Combined-Command" class="headerlink" title="Combined Command"></a>Combined Command</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s -g #生成并本地预览</span></pre></td></tr><tr><td class="code"><pre><span class="line">hexo d -g #生成并上传</span></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
         <category>随手记</category>
       </categories>
       <tags>
         <tag>IT技术</tag>
-        <tag>部署</tag>
+        <tag>Hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Model&#39;</title>
+    <url>/2021/05/19/Model/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>hexo 安装</title>
